@@ -1,9 +1,9 @@
-import { pitchStore, random } from "~/core/pitch/pitch";
-import { Button } from "../ui/button";
-import { Flex } from "../ui/flex";
-import { ExtraLarge, Muted } from "../ui/typography";
-import { PitchSelector } from "./pitch-selector";
 import { onMount } from "solid-js";
+import { PitchSelector } from "~/components/composite/pitch-selector";
+import { Button } from "~/components/ui/button";
+import { Flex } from "~/components/ui/flex";
+import { ExtraLarge, Muted } from "~/components/ui/typography";
+import { pitchStore, random } from "~/core/pitch/pitch";
 
 export const Generator = () => {
   onMount(() => {

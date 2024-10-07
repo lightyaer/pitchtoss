@@ -3,7 +3,7 @@ import { cn } from "~/lib/utils";
 
 export const ExtraLarge = (props: { children: JSX.Element }) => {
   return (
-    <h1 class="scroll-m-20 text-9xl font-extrabold tracking-tight lg:text-6xl">
+    <h1 class="scroll-m-20 text-8xl font-extrabold tracking-tight lg:text-9xl">
       {props.children}
     </h1>
   );
@@ -55,8 +55,10 @@ export const Small = (props: { children: JSX.Element }) => {
   );
 };
 
-export const Muted = (props: { children: JSX.Element }) => {
-  return <p class="text-muted-foreground">{props.children}</p>;
+export const Muted = (props: { children: JSX.Element; class?: string }) => {
+  return (
+    <p class={cn("text-muted-foreground", props.class)}>{props.children}</p>
+  );
 };
 
 export const Text = (props: { children: JSX.Element }) => {
@@ -67,14 +69,19 @@ export const Link = (props: {
   children: JSX.Element;
   href: string;
   disabled?: boolean;
+  target?: string;
+  class?: string;
 }) => {
   return (
     <a
+      rel="noreferrer noopener"
+      target={props.target}
       aria-disabled={true}
       href={props.href}
       class={cn(
         props.disabled && "cursor-not-allowed",
-        !props.disabled && "cursor-pointer"
+        !props.disabled && "cursor-pointer",
+        props.class
       )}
     >
       {props.children}

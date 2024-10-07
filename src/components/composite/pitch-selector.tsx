@@ -1,7 +1,7 @@
+import { Button } from "~/components/ui/button";
 import { PITCHES } from "~/core/pitch/PITCHES";
 import { pitchStore, togglePitch } from "~/core/pitch/pitch";
 import type { PitchKey } from "~/types/pitch";
-import { Button } from "../ui/button";
 
 export const PitchSelector = () => {
   const pitches = Object.keys(PITCHES);

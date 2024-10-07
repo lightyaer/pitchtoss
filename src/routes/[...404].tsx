@@ -4,7 +4,7 @@ import { Illustration404 } from "~/components/illustrations/404";
 import { Flex } from "~/components/ui/flex";
 import { Text } from "~/components/ui/typography";
 
-export default function NotFound() {
+export default function NotFoundPage() {
   return (
     <main>
       <Title>Not Found</Title>

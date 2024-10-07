@@ -6,5 +6,6 @@ export default defineConfig({
         plugins: [devtools({
             autoname: true
         })]
-    }
+    },
+    ssr: false
 });

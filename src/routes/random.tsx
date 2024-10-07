@@ -2,7 +2,7 @@ import { Generator } from "~/components/composite/generator";
 import { Flex } from "~/components/ui/flex";
 import { H1, Text } from "~/components/ui/typography";
 
-export default function Home() {
+export default function RandomPage() {
   return (
     <main>
       <Flex

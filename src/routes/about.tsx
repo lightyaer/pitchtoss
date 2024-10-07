@@ -1,6 +1,6 @@
 import { Title } from "@solidjs/meta";
 
-export default function Home() {
+export default function AboutPage() {
   return (
     <main>
       <Title>About</Title>
